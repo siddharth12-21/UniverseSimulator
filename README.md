@@ -2,6 +2,10 @@
 
 A 3D interactive universe simulator built with Three.js. Explore from Earth to the cosmic web—zoom from our solar system to nearby stars, the Milky Way galaxy, local group, superclusters, and the observable universe.
 
+## Live Site
+
+- [UniverseSimulator Live](https://siddharth12-21.github.io/UniverseSimulator-site/)
+
 ## Features
 
 - **Solar System**: Earth at center, Sun and planets with procedural textures, moons, asteroid belt, Kuiper belt, dwarf planets, and comets
