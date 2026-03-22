@@ -19,6 +19,9 @@ import { stellarGroup, stellarPoints, nearbyStarData, starSprites, galaxyGroup, 
 // Cosmic
 import { superclusterGroup, greatAttractorGlow, cosmicGroup, cosmicSprites, cosmicPoints, piscesCetus, transitionFilamentGroup, heroFilamentSegments, wallLabelsData } from './cosmic/cosmic.js';
 
+// Mini solar systems in other galaxies
+import { updateMiniSystems, miniSystemFacts } from './galaxy/miniSolarSystems.js';
+
 // Data
 import { planetFacts, cosmicFacts, objectStats, travelTimes } from './data/facts.js';
 
@@ -694,6 +697,7 @@ mapCanvas.addEventListener('click', (e) => {
 // POPULATE MAP & SEARCH INDEX
 // ============================================================
 
+Object.assign(cosmicFacts, miniSystemFacts);
 populateCosmicMapObjects();
 setWallFocusTarget(wallFocusTarget);
 buildSearchIndex(hitTargets, cosmicSprites, wallLabelsData);
@@ -917,6 +921,8 @@ function animate() {
     dp.pivot.rotation.y += dt * dp.speed;
     dp.mesh.rotation.y += dt * 0.2;
   }
+
+  updateMiniSystems(dt);
 
   for (const c of comets) {
     c.angle += dt * c.spd;

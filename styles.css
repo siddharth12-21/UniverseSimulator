@@ -241,11 +241,12 @@ html, body {
   transition: background 0.2s, border-color 0.2s;
 }
 #bookmark-btn {
-  border: 1px solid rgba(180, 100, 255, 0.35);
-  background: rgba(40, 0, 60, 0.6);
-  color: #bb88ff;
+  border: 1px solid rgba(255, 160, 0, 0.35);
+  background: rgba(60, 30, 0, 0.6);
+  color: #ffaa33;
+  text-shadow: 0 0 6px rgba(255, 170, 0, 0.4);
 }
-#bookmark-btn:hover { background: rgba(60, 20, 80, 0.7); border-color: rgba(200, 140, 255, 0.5); }
+#bookmark-btn:hover { background: rgba(80, 45, 0, 0.7); border-color: rgba(255, 180, 50, 0.5); }
 #theme-toggle {
   border: 1px solid rgba(200, 180, 100, 0.35);
   background: rgba(40, 35, 0, 0.6);
