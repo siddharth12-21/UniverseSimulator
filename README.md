@@ -31,6 +31,18 @@ To verify all modules load correctly, serve the project and open `test-modular.h
 
 2. Open `http://localhost:3000` (or your server's URL)
 
+## Desktop App (Electron)
+
+The simulator is wrapped in Electron to produce downloadable Mac and Windows installers.
+
+1. Install dependencies: `npm install`
+2. Run locally: `npm start`
+3. Build distributable:
+   - **Mac** (.dmg): `npm run dist:mac`
+   - **Windows** (.exe): `npm run dist:win`
+
+Build output goes to `dist/`. The app loads Three.js from `esm.sh` over HTTPS so it needs an internet connection.
+
 ## Controls
 
 - **Orbit**: Click and drag to rotate the view

@@ -1,0 +1,41 @@
+{
+  "name": "universe-simulator",
+  "version": "1.0.0",
+  "description": "A 3D interactive universe simulator built with Three.js",
+  "author": "Siddharth",
+  "private": true,
+  "type": "module",
+  "main": "electron/main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist:mac": "electron-builder --mac",
+    "dist:win": "electron-builder --win"
+  },
+  "devDependencies": {
+    "electron": "^33.0.0",
+    "electron-builder": "^25.0.0"
+  },
+  "build": {
+    "appId": "com.universesimulator.app",
+    "productName": "UniverseSimulator",
+    "files": [
+      "electron/**/*",
+      "index.html",
+      "styles.css",
+      "src/**/*"
+    ],
+    "mac": {
+      "target": "dmg",
+      "category": "public.app-category.education",
+      "icon": "build/icon.icns"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "build/icon.png"
+    },
+    "nsis": {
+      "oneClick": true,
+      "perMachine": false
+    }
+  }
+}
