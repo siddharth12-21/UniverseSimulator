@@ -47,6 +47,8 @@ The simulator is wrapped in Electron to produce downloadable Mac and Windows ins
 
 Build output goes to `dist/`. The app loads Three.js from `esm.sh` over HTTPS so it needs an internet connection.
 
+**App icon:** Replace `build/logo-source.png` with your square artwork, then run `npm run build:icon` to regenerate the squircle (rounded-square) PNG, `.icns`, and rebuild the app with `npm run dist:mac`.
+
 ## Controls
 
 - **Orbit**: Click and drag to rotate the view

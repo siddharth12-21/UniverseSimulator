@@ -8,6 +8,7 @@
   "main": "electron/main.js",
   "scripts": {
     "start": "electron .",
+    "build:icon": "python3 scripts/make-squircle-icon.py build/logo-source.png build/icon.png && bash scripts/rebuild-icons.sh",
     "dist:mac": "electron-builder --mac",
     "dist:win": "electron-builder --win"
   },
